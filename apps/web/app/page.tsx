@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import { prisma } from "@repo/database";
+import { prisma } from "@beacon/database";
 
 export default async function Home() {
   const user = await prisma.user.findFirst();
